@@ -43,12 +43,12 @@
  </tileset>
  <layer id="1" name="background" width="36" height="34">
   <data encoding="base64" compression="zlib">
-   eJzt08cKAkEQRdFRMLtRMLsx55yz//9V3mXZMNKLnmkX9eDwqF5NFUwQaDQazf8ngaToFNLIIGsxu04JZdEVVFFD3WJ2nQ66ogcYYoSxmM1eYR3B92ywFX3AESecxWz2C+8Ividsf9t2nbD9bdt19D6/Y+67wBI55FFAUbzHfZ8HnmigiRba4t3XfSaYYoZ54P8+F1xxwz3wdx/9v75j7ttDX7Tv++ywFx33fTQajUYTXz62USlJ
+   eJztk8kKAjEQBaPg7kXB3YsruIzgCq7//1nWJdAOTMghJB66oHh005c8iDGKoij/TwnLIitYxRrWHbO9D00HuyJ72McBDh2zvQ/NDOciV7j2SHsfmiOeRF7x5pH2PjS+fRRlaHz7KMrQaD9u8u/N8IANbGIL22Ifu583fnCEY5zgVOxT9bPBLe5wb9L3c8cHPvFl0vWj/+uX/HsXuBSZup8zXkTG7kdRFEWJxxcx5Sjx
   </data>
  </layer>
  <layer id="2" name="triggers" width="36" height="34">
   <data encoding="base64" compression="zlib">
-   eJztllkKwCAMRL1aN7t5//M0gh9BaqskiqXzYMiHIMnDgMYAAEDfLCFWUK1iP2eIE1Sn2M+dH36WM3ttP/wsZ3ZtP1K0/UiBn2da+UntXUwrP6m9i4GfPvzk8rf9GihjwR21/ayUreAOTT+e+N1OlJnVt/9GbXbKwSoAAHyZC328IN8=
+   eJztlkkKgDAMRXs1pzr1/ucxQhdFRBsyUPE/+GSVEB4NNAQAAGibKScKalTcZ89JgpoU97nzw+n18MPptfAjRduPFPh5xstP7d15+am9O/hpw08tf7uvjtIzZlj7mSkLY4amn5Prux0oY1Hf/hvWrJStqAAA8GUOWXwg3w==
   </data>
  </layer>
 </map>
