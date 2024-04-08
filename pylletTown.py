@@ -76,15 +76,13 @@ class Player(pygame.sprite.Sprite):
         # Collision detection:
         # Reset to the previous rectangle if player collides
         # with anything in the foreground layer
-        if len(game.tilemap.layers['triggers'].collide(self.rect, 
-                                                        'solid')) > 0:
+        if len(game.tilemap.layers['triggers'].collide(self.rect, 'solid')) > 0:
             self.rect = lastRect
         # Area entry detection:
-        elif len(game.tilemap.layers['triggers'].collide(self.rect, 
-                                                        'entry')) > 0:
-            entryCell = game.tilemap.layers['triggers'].find('entry')[0]
+        elif len(game.tilemap.layers['triggers'].collide(self.rect, 'entry')) > 0:
+            entryCell = game.tilemap.layers['triggers'].collide(self.rect, 'entry')[0]
             game.fadeOut()
-            game.initArea(entryCell['entry'])
+            game.initArea(entryCell['entry'], entryCell['entryFrom'])
             
             return
         # Switch to the walking sprite after 32 pixels 
@@ -163,7 +161,7 @@ class Game(object):
         screen.fill((255,255,255,50))
         pygame.display.flip()
         
-    def initArea(self, mapFile):
+    def initArea(self, mapFile, mapFileFrom):
         """Load maps and initialize sprite layers for each new area"""
         self.tilemap = tmx.load(mapFile, screen.get_size())
         self.players = tmx.SpriteLayer()
@@ -178,15 +176,20 @@ class Game(object):
         else:
             self.tilemap.layers.append(self.objects)
         # Initializing player sprite
-        startCell = self.tilemap.layers['triggers'].find('playerStart')[0]
-        self.player = Player((startCell.px, startCell.py), 
-                             startCell['playerStart'], self.players)
+        # if its blank, use the default location otherwise check where the player is coming from
+        if mapFileFrom != '':
+            startCell = self.tilemap.layers['triggers'].match(entryFrom=mapFileFrom)[0]
+
+        else : 
+            startCell = self.tilemap.layers['triggers'].find('playerStart')[0]
+        
+        self.player = Player((startCell.px, startCell.py), startCell['playerStart'], self.players)
         self.tilemap.layers.append(self.players)
-        self.tilemap.set_focus(self.player.rect.x, self.player.rect.y)  
+        self.tilemap.set_focus(self.player.rect.x, self.player.rect.y)
             
     def main(self):
         clock = pygame.time.Clock()
-        self.initArea('palletTown.tmx')
+        self.initArea('palletTown.tmx','')
         
         while 1:
             dt = clock.tick(30)

@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="36" height="34" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1">
- <tileset firstgid="1" name="indoors" tilewidth="32" tileheight="32" tilecount="64" columns="16">
-  <image source="tiles/indoors.png" width="512" height="128"/>
- </tileset>
- <tileset firstgid="65" name="triggers" tilewidth="32" tileheight="32" tilecount="12" columns="6">
+ <tileset firstgid="1" name="triggers" tilewidth="32" tileheight="32" tilecount="12" columns="6">
   <image source="tiles/triggers.png" width="192" height="64"/>
   <tile id="0">
    <properties>
-    <property name="playerStart" value="up"/>
+    <property name="entryFrom" value="playerHouse1F.tmx"/>
+    <property name="playerStart" value="left"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="entry" value="playerHouse1F.tmx"/>
+    <property name="entryFrom" value="playerHouse2F.tmx"/>
    </properties>
   </tile>
   <tile id="4">
@@ -41,14 +45,17 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="13" name="reds_house" tilewidth="32" tileheight="32" tilecount="80" columns="16">
+  <image source="resources/tilesets/reds_house.png" width="512" height="160"/>
+ </tileset>
  <layer id="1" name="background" width="36" height="34">
   <data encoding="base64" compression="zlib">
-   eJzt08cKAkEQRdFRMLtRMLsx55yz//9V3mXZMNKLnmkX9eDwqF5NFUwQaDQazf8ngaToFNLIIGsxu04JZdEVVFFD3WJ2nQ66ogcYYoSxmM1eYR3B92ywFX3AESecxWz2C+8Ividsf9t2nbD9bdt19D6/Y+67wBI55FFAUbzHfZ8HnmigiRba4t3XfSaYYoZ54P8+F1xxwz3wdx/9v75j7ttDX7Tv++ywFx33fTQajUYTXz62USlJ
+   eJztzrcKAkEUheF9AW2MoJ0RDGBARYU1FObs+z+Lf7F2A7MLOzrFOfAVt7p/EGiapvm/C67IWAwwNNxpr4c+RhhHJoaeNTaGO+3dcMcW08gMWYsSyg56QqxwwC6yj9HTQttBj+2vjXrUY5JD3qOeGuoe9VRQ9aing+4feuZYxPj79cDTYc8RpwQ9BRQ96nnh7bDnjGWCngaaDns0TdO03+0D6LUW+w==
   </data>
  </layer>
- <layer id="2" name="triggers" width="36" height="34">
+ <layer id="2" name="triggers" width="36" height="34" visible="0">
   <data encoding="base64" compression="zlib">
-   eJztllkKwCAMRL1aN7t5//M0gh9BaqskiqXzYMiHIMnDgMYAAEDfLCFWUK1iP2eIE1Sn2M+dH36WM3ttP/wsZ3ZtP1K0/UiBn2da+UntXUwrP6m9i4GfPvzk8rf9GihjwR21/ayUreAOTT+e+N1OlJnVt/9GbXbKwSoAAHyZC328IN8=
+   eJzt1NEKgCAMBVCLsiD//3vzYcIgnK1t0sM9MFYwRS5oSgAA/7ZTZUPPjue5qIqhF8fzSPn0LLVW+t4Gs1pSPj1HrZP9e+dj5Z2PFfKRzcpndM+aWfmM7lmDfGRR77NmDZ+Pep81a/g88nmuicqH7/+1AwDAezeF9wQh
   </data>
  </layer>
 </map>

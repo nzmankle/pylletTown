@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="36" height="34" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="triggers" tilewidth="32" tileheight="32" tilecount="12" columns="6">
+  <image source="tiles/triggers.png" width="192" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="entryFrom" value="palletTown.tmx"/>
+    <property name="playerStart" value="up"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="entryFrom" value="playerHouse2F.tmx"/>
+    <property name="playerStart" value="left"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="entry" value="playerHouse2F.tmx"/>
+    <property name="entryFrom" value="playerHouse1F.tmx"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="entry" value="playerHouse2F.tmx"/>
+    <property name="entryFrom" value="playerHouse1F.tmx"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="entry" value="palletTown.tmx"/>
+    <property name="entryFrom" value="playerHouse1F.tmx"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="entry" value="palletTown.tmx"/>
+    <property name="entryFrom" value="playerHouse1F.tmx"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="reds_house" tilewidth="32" tileheight="32" tilecount="80" columns="16">
+  <image source="resources/tilesets/reds_house.png" width="512" height="160"/>
+ </tileset>
+ <layer id="1" name="background" width="36" height="34">
+  <data encoding="base64" compression="zlib">
+   eJzt1LsKAjEQheG8gDe00UZFG22861qo613f/4X8hSwMASXFbpJiDnwMSZPDsKwxGo1Gk372yMSsWQssPc5l54CjmMV7Z1w8zmVnhrmYdauNjji7uuhV0OeEXMzivRHGf/pMMK2gz6/3fGkf7SM10MQKa2ywFfeh+/QxwBU33PEQ97H28/1f76zMxN/PG0/rZeLtJ7XvObU+LUfsPkNH6D4ajUajCZcP8ToXKQ==
+  </data>
+ </layer>
+ <layer id="2" name="triggers" width="36" height="34" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1t0KgCAMBWCLsj/f/3lT2MWQmZJTjM4HY4hd6KFRxgAAjG2lshXdKp7nonIV3SmeR8qH70l3n6mCJfHMW1I+fE+6++ZrZ2vtfGpp51ML+TzrlU9q7mK98knNXQz5jJFPqb/N10RVqnU+8fcpRzOfIPfe5v43Wjt8nawDAHzZDYn8A+c=
+  </data>
+ </layer>
+</map>

@@ -203,12 +203,16 @@ class Layer(object):
 	Layers have some basic properties:
 
 		width, height - the dimensions of the Layer in cells
+		
 		tile_width, tile_height - the dimensions of each cell
+		
 		px_width, px_height - the dimensions of the Layer in pixels
+		
 		tilesets - the tilesets used in this Layer (a Tilesets instance)
+		
 		properties - any properties set for this Layer
-		cells - a dict of all the Cell instances for this Layer, keyed off
-				(x, y) index.
+		
+		cells - a dict of all the Cell instances for this Layer, keyed off (x, y) index.
 
 	Additionally you may look up a cell using direct item access:
 
@@ -671,14 +675,23 @@ class TileMap(object):
 	TileMaps have a number of properties:
 
 		width, height - the dimensions of the tilemap in cells
+		
 		tile_width, tile_height - the dimensions of the cells in the map
+		
 		px_width, px_height - the dimensions of the tilemap in pixels
+		
 		properties - any properties set on the tilemap in the TMX file
+		
 		layers - all layers of this tilemap as a Layers instance
+		
 		tilesets - all tilesets of this tilemap as a Tilesets instance
+		
 		fx, fy - viewport focus point
+		
 		view_w, view_h - viewport size
+		
 		view_x, view_y - viewport offset (origin)
+		
 		viewport - a Rect instance giving the current viewport specification
 
 	'''

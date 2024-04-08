@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" name="triggers" tilewidth="32" tileheight="32" tilecount="12" columns="6">
+  <image source="tiles/triggers.png" width="192" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="entryFrom" value="palletTown.tmx"/>
+    <property name="playerStart" value="up"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="entry" value="palletTown.tmx"/>
+    <property name="entryFrom" value="pokecentre.tmx"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="entry" value="palletTown.tmx"/>
+    <property name="entryFrom" value="pokecentre.tmx"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="entry" value="palletTown.tmx"/>
+    <property name="entryFrom" value="pokecentre.tmx"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="pokecenter" tilewidth="32" tileheight="32" tilecount="96" columns="16">
+  <image source="resources/tilesets/pokecenter.png" width="512" height="192"/>
+ </tileset>
+ <layer id="4" name="background" width="32" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt00lPAkEQhuH5BYobLgmKEhEPCrjhRVxIRE8eiChcPBCDgv//zEucSipFdzNA4EQlT77u6Uq6eyYTRcsaVgY3uEYdL/F4aBWpeBzq037RC8xD+3/gU/UeIOvY3/ZpffwF5r7939FCG5uoYQcrcbr6mmo9aYb230AOezhBAftxuvqaaj1p2lrDOrYcttU41Kd18aPuK3NZt3WIIxwjH8ikfTKW+8pc1m1N+v2mzTc0HPtP+v2mzS90HPuXcYHnOd8/jW/H/o94wuuC3oOtS1xFo//7vNJWBbfR6P++qPuf4VzluPPP2m/rDlWV484/a7+tIkoq5dy7hjz39fvS9tu6x4NKOfepIc99/b60/cv6rwHJh0Nu
+  </data>
+ </layer>
+ <layer id="5" name="triggers" width="32" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzVllkKwCAMRO2+3v+8zUcFGQzRJGj7YAguOIwLGMK/WQ3yYHnXworj2Pbyv0h3puI4tr3z1+Kd3+KfOz+vGsF+9OfO0Voj2I/+reDy9/bX3uNauP3X3mMtvfJz/l/JX7oP1vnS+5ewzi/NP5DGzHqt8m+kvSCPhJSf00Sak2r5b2j+HwfpTKo3D4bTBnQ=
+  </data>
+ </layer>
+</map>
